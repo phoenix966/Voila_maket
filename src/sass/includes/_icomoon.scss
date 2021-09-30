@@ -1,0 +1,36 @@
+@include font-icon('icomoon','icomoon');
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-tripadvisor:before {
+    content: "\e900";
+  }
+  .icon-instagram:before {
+    content: "\e901";
+  }
+  .icon-facebook-bg:before {
+    content: "\e902";
+  }
+  .icon-twitter:before {
+    content: "\e903";
+  }
+  .icon-facebook:before {
+    content: "\e904";
+  }
+  .icon-arrow-down:before {
+    content: "\e905";
+  }
+  
