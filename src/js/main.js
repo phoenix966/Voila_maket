@@ -1,8 +1,7 @@
-//=require ../../node_modules/jquery/dist/jquery.js
-//=require ../../node_modules/bootstrap/dist/js/bootstrap.js
+  let hamburger = document.querySelector(".hamburger");
+  let mobile = document.querySelector(".mobile");
 
-const foo = () =>{
-    console.log(fgfg);
-    console.log(rt);
-}
-
+  hamburger.addEventListener("click", function() {
+    hamburger.classList.toggle("is-active");
+    mobile.classList.toggle('mobile--hide');
+  });
