@@ -1,0 +1,102 @@
+.social{
+    background: #fff;
+    min-height: 421px;
+    padding-top: 116px;
+    padding-bottom: 119px;
+    &__container{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex: 0 1 48%;
+    }
+    &__title{
+        font-family: var(--font-bold-serif);
+        font-size: 26px;
+        line-height: 24px;
+        font-weight: 700;
+        color: var(--color-font-dark);
+        margin-bottom: 30px;
+    }
+    &__text{
+        max-width: 300px;
+        min-height: 20px;
+        margin-bottom: 33px;
+        font-family: var(--font-regular-sans);
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #5b5b5b;
+        &--margin{
+            margin-bottom: 50px;
+        }
+    }
+    &__btn{
+        border: none;
+        cursor: pointer;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        font-family: var(--font-regular-lato);
+        font-weight: 400;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+        width: 60px;
+        height: 18px;
+        background-color: #3e59a5;
+        border-radius: 5px;
+        border: none;
+        margin: 0 5px;
+        cursor: pointer;
+        &--light{
+            background-color: #1b95e0;
+        }
+    }
+    &__row{
+        align-self: center;
+    }
+    &__separator{
+        position: relative;
+        font-family: var(--font-regular-lato);
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #9a9999;
+        &::before{
+            position: absolute;
+            bottom: 40px;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+            content: ' ';
+            width: 1px;
+            height: 67px;
+            opacity: 0.4;
+            background-color: #9a9999;
+        }
+        &::after{
+            position: absolute;
+            top: 40px;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+            content: ' ';
+            width: 1px;
+            height: 67px;
+            opacity: 0.4;
+            background-color: #9a9999;
+        }
+    }
+}
