@@ -1,6 +1,7 @@
 .header{
     background: url(../img/header_bg.webp) top center / cover;
-    height: 100vh;
+    height: 112vh;
+    position: relative;
     &__container{
         display: flex;
         align-items: baseline;
@@ -140,7 +141,7 @@
 };
 .scroll{
     position: absolute;
-    bottom: 10px;
+    bottom: 30px;
     left: 0;
     right: 0;
     display: flex;
@@ -158,8 +159,10 @@
         font-weight: 400;
         color: var( --color-font-light);
     }
-    & span{
+    & a{
         font-size: 22px;
+        text-decoration: none;
+        color: #fff;
     };
 };
 .mobile{

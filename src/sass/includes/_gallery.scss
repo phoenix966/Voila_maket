@@ -1,0 +1,109 @@
+.gallery{
+    display: flex;
+    justify-content: flex-end;
+    min-height: 60vh;
+    margin-bottom: 50px;
+    background: var(--color-bg-dark);
+    padding: 40px 0;
+    @include media(728px){
+        padding: 120px 0;
+    }
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left top;
+    }
+    &__title{
+        font-family: var(--font-bold-serif);
+        font-size: 1.625em;
+        line-height: 1.5em;
+        font-weight: 700;
+        color: var(--color-font-dark);
+    }
+    &__text{
+        font-family: var(--font-regular-serif);
+        font-size: 1em;
+        line-height: 1.5em;
+        font-weight: 400;
+        color: var(--color-text-dark);
+    }
+    &__btn{
+        border: none;
+        cursor: pointer;
+        align-self: flex-end;
+        font-size: 0.8125em;
+    }
+    &__grid{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       padding: 0 5px ;
+       width: 100%;
+        @include media(678px){
+            padding: 0;
+            display: grid;
+            align-items: unset;
+            grid-gap: 15px;
+            grid-template-columns: repeat(18,1fr);
+            grid-template-rows: repeat(9,1fr);
+            height: 503px;
+            width: 96%;
+            margin: 0 auto;
+            font-size: 12px;
+        };
+        @include media(968px){
+            display: grid;
+            grid-gap: 30px;
+            grid-template-columns: repeat(18,1fr);
+            grid-template-rows: repeat(9,1fr);
+            width: 85%;
+            font-size: 16px;
+            height: 753px;
+            margin: 0;
+        };
+        @include media(1400px){
+            height: 953px;
+            width: 75%;
+        }
+        
+    }
+    &__item{
+        // border: 1px solid #000;
+        margin: 10px 0;
+        width: 100%;
+        @include media(728px){
+            margin: 0;
+            width: unset;
+        }
+        &-1{
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            grid-column: 1 / 9;
+            grid-row: 1 / 6;
+            // padding: 13px;
+        }
+        &-2{
+            background: url('../img/bg-1.webp')  right center / cover;
+            grid-column: 9 / 23;
+            grid-row: 1 / 7;
+        }
+        &-3{
+            // background: green;
+            grid-column: 1 / 11;
+            grid-row: 6 / 11;
+        }
+        &-4{
+            background: yellow;
+            grid-column: 11 / 16;
+            grid-row: 7 / 11;
+        }
+        &-5{
+            background: blue;
+            grid-column: 16 / 23;
+            grid-row: 7 / 11;
+        }
+    }
+}
