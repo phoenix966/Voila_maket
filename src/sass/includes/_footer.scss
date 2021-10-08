@@ -10,7 +10,7 @@
         padding: 0 5px;
         @include media(568px){
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-between;
         }
     }
     &__nav{
